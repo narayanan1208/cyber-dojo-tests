@@ -11,5 +11,5 @@ def print_multiples_of_number_in_string():
             print(i)
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
     print_multiples_of_number_in_string()
