@@ -1,4 +1,4 @@
-from hiker import print_multiples_of_number_in_string
+from fizzbuzz import print_multiples_of_number_in_string
 
 
 def test_print_multiples_of_number_in_string(capsys):

@@ -2,7 +2,7 @@ import unittest
 from io import StringIO
 from unittest.mock import patch
 
-from hiker import print_multiples_of_number_in_string
+from fizzbuzz import print_multiples_of_number_in_string
 
 
 class TestPrintMultiplesOfNumberInString(unittest.TestCase):
