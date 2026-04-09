@@ -120,5 +120,5 @@ class TestPrintMultiplesOfNumberInString(unittest.TestCase):
             self.assertEqual(mock_stdout.getvalue(), expected_output)
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
     unittest.main()
