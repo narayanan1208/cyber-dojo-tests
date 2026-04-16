@@ -12,7 +12,6 @@ help:
 	@echo "  make test     -> Run tests with coverage"
 	@echo "  make check    -> Run all checks (format + lint + test)"
 	@echo "  make clean    -> Remove cache files"
-	@echo "  make all      -> Run all commands (format + lint + test)"
 
 install:
 	$(PYTHON) -m pip install -r requirements.txt
