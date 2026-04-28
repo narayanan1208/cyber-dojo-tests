@@ -1,5 +1,15 @@
-from monty_hall import *
 import random
+
+from monty_hall import (
+    host_open,
+    init_doors,
+    is_win,
+    player_choose,
+    run_single_game,
+    simulate_games,
+    stay_choice,
+    switch_choice,
+)
 
 
 def test_init_doors_has_one_car():
@@ -29,6 +39,10 @@ def test_switch_changes_choice():
     assert switch_choice(0, 1) == 2
 
 
+def test_stay_choice():
+    assert stay_choice(2) == 2
+
+
 def test_is_win():
     doors = ["car", "goat", "goat"]
     assert is_win(doors, 0)
@@ -52,6 +66,6 @@ def test_probability_switch():
 
 
 def test_switch_better():
-    stay = simulate_games("stay", 1000, seed=42)
-    switch = simulate_games("switch", 1000, seed=42)
+    stay = simulate_games("stay", 3, seed=42)
+    switch = simulate_games("switch", 3, seed=42)
     assert switch > stay

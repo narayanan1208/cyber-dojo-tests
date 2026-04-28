@@ -49,15 +49,3 @@ def run_single_game(strategy, rng):
 def simulate_games(strategy, n=1000, seed=None):
     rng = random.Random(seed)
     return sum(run_single_game(strategy, rng) for _ in range(n))
-
-
-def compare_strategies(n=1000, seed=None):
-    stay_wins = simulate_games("stay", n, seed)
-    switch_wins = simulate_games("switch", n, seed)
-
-    return {
-        "stay": stay_wins,
-        "switch": switch_wins,
-        "stay_rate": stay_wins / n,
-        "switch_rate": switch_wins / n,
-    }
